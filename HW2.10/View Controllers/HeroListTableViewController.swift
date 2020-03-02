@@ -10,14 +10,14 @@ import UIKit
 
 class HeroListTableViewController: UITableViewController {
 	
-	var heroes: [Hero]! = []
+	var heroes: [Hero] = []
 	
     override func viewDidLoad() {
         super.viewDidLoad()
 		
 		fetchDataHero { (heroesResponse) in
 			self.heroes = heroesResponse
-			
+
 			DispatchQueue.main.async {
 				self.tableView.reloadData()
 			}
@@ -31,8 +31,11 @@ class HeroListTableViewController: UITableViewController {
     }
 
 	override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-		let cell = tableView.dequeueReusableCell(withIdentifier: "heroNameCell", for: indexPath)
-		cell.textLabel?.text = heroes[indexPath.row].name
+		let cell = tableView.dequeueReusableCell(withIdentifier: "heroNameCell", for: indexPath) as! HeroCellPrototype
+		
+		let hero = heroes[indexPath.row]
+        cell.configure(with: hero)
+		
         return cell
     }
 

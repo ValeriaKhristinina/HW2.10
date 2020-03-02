@@ -10,6 +10,7 @@
 		E2020197240C30B900D08D57 /* HeroListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2020196240C30B900D08D57 /* HeroListTableViewController.swift */; };
 		E202019A240C32CF00D08D57 /* Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2020199240C32CF00D08D57 /* Hero.swift */; };
 		E202019D240C4BC000D08D57 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E202019C240C4BC000D08D57 /* NetworkManager.swift */; };
+		E20201A0240D3F8300D08D57 /* HeroCellPrototype.swift in Sources */ = {isa = PBXBuildFile; fileRef = E202019F240D3F8300D08D57 /* HeroCellPrototype.swift */; };
 		E2644F0C240C265500297865 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2644F0B240C265500297865 /* AppDelegate.swift */; };
 		E2644F0E240C265500297865 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2644F0D240C265500297865 /* SceneDelegate.swift */; };
 		E2644F10240C265500297865 /* HeroInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2644F0F240C265500297865 /* HeroInfoViewController.swift */; };
@@ -22,6 +23,7 @@
 		E2020196240C30B900D08D57 /* HeroListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroListTableViewController.swift; sourceTree = "<group>"; };
 		E2020199240C32CF00D08D57 /* Hero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hero.swift; sourceTree = "<group>"; };
 		E202019C240C4BC000D08D57 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		E202019F240D3F8300D08D57 /* HeroCellPrototype.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroCellPrototype.swift; sourceTree = "<group>"; };
 		E2644F08240C265500297865 /* HW2.10.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HW2.10.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2644F0B240C265500297865 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2644F0D240C265500297865 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -87,6 +89,14 @@
 			path = Network;
 			sourceTree = "<group>";
 		};
+		E202019E240D3F4600D08D57 /* Prototypes */ = {
+			isa = PBXGroup;
+			children = (
+				E202019F240D3F8300D08D57 /* HeroCellPrototype.swift */,
+			);
+			path = Prototypes;
+			sourceTree = "<group>";
+		};
 		E2644EFF240C265500297865 = {
 			isa = PBXGroup;
 			children = (
@@ -106,6 +116,7 @@
 		E2644F0A240C265500297865 /* HW2.10 */ = {
 			isa = PBXGroup;
 			children = (
+				E202019E240D3F4600D08D57 /* Prototypes */,
 				E2020198240C32A900D08D57 /* Models */,
 				E2020194240C2CBA00D08D57 /* View Controllers */,
 				E2020195240C2CC900D08D57 /* Storyboards */,
@@ -191,6 +202,7 @@
 				E2644F10240C265500297865 /* HeroInfoViewController.swift in Sources */,
 				E2644F0C240C265500297865 /* AppDelegate.swift in Sources */,
 				E2644F0E240C265500297865 /* SceneDelegate.swift in Sources */,
+				E20201A0240D3F8300D08D57 /* HeroCellPrototype.swift in Sources */,
 				E202019A240C32CF00D08D57 /* Hero.swift in Sources */,
 				E2020197240C30B900D08D57 /* HeroListTableViewController.swift in Sources */,
 			);

@@ -9,7 +9,8 @@
 import UIKit
 
 class HeroInfoViewController: UIViewController {
-	@IBOutlet var nameOfHeroLabel: UILabel!
+	@IBOutlet var heroNameLabel: UILabel!
+	
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()

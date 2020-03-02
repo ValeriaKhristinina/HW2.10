@@ -14,6 +14,7 @@ class HeroInfoViewController: UIViewController {
 	@IBOutlet var heroRealNameLabel: UILabel!
 	@IBOutlet var heroGenderLabel: UILabel!
 	@IBOutlet var heroRaceLabel: UILabel!
+	@IBOutlet var heroAlterEgoLabel: UILabel!
 	@IBOutlet var heroEyeColorLabel: UILabel!
 	@IBOutlet var heroHairColorLabel: UILabel!
 	@IBOutlet var heroPlaceOfBirthLabel: UILabel!
@@ -32,6 +33,7 @@ class HeroInfoViewController: UIViewController {
 		heroRealNameLabel.text = hero.biography?.fullName
 		heroGenderLabel.text = hero.appearance?.gender
 		heroRaceLabel.text = hero.appearance?.race
+		heroAlterEgoLabel.text = hero.biography?.alterEgos
 		heroEyeColorLabel.text = hero.appearance?.eyeColor
 		heroHairColorLabel.text = hero.appearance?.hairColor
 		heroPlaceOfBirthLabel.text = hero.biography?.placeOfBirth

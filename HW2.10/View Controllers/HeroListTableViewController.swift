@@ -9,17 +9,20 @@
 import UIKit
 
 class HeroListTableViewController: UITableViewController {
+	@IBOutlet var activityIndicator: UIActivityIndicatorView!
 	
 	var heroes: [Hero] = []
 	
     override func viewDidLoad() {
         super.viewDidLoad()
+		activityIndicator.startAnimating()
+		activityIndicator.hidesWhenStopped = true
 		
 		fetchDataHero { (heroesResponse) in
 			self.heroes = heroesResponse
-
 			DispatchQueue.main.async {
 				self.tableView.reloadData()
+				self.activityIndicator.stopAnimating()
 			}
 		}
     }

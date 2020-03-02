@@ -22,6 +22,7 @@ struct HeroAppearance: Decodable {
 
 struct HeroBiography: Decodable {
 	var fullName: String?
+	var alterEgos: String?
 	var aliases: [String]?
 	var placeOfBirth: String?
 	var publisher: String?

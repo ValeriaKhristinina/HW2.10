@@ -38,16 +38,21 @@ class HeroListTableViewController: UITableViewController {
 		
         return cell
     }
-
-    /*
+	
     // MARK: - Navigation
+	
+	override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+			let hero = heroes[indexPath.row]
+			performSegue(withIdentifier: "heroInfoSegue", sender: hero)
+		}
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+		if segue.identifier == "heroInfoSegue" {
+			let heroInfoVC = segue.destination as! HeroInfoViewController
+			heroInfoVC.hero = sender as? Hero
+		}
     }
-    */
+    
 
 }
 

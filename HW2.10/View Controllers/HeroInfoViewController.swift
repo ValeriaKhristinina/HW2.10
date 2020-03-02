@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  HeroInfoViewController.swift
 //  HW2.10
 //
 //  Created by Valeria Khristinina on 01/03/2020.
@@ -8,11 +8,11 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class HeroInfoViewController: UIViewController {
+	@IBOutlet var nameOfHeroLabel: UILabel!
+	
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		// Do any additional setup after loading the view.
 	}
 
 
